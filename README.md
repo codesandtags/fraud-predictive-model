@@ -36,3 +36,21 @@ To deactivate the current environment, run the following command:
 ```sh
 conda deactivate
 ```
+
+To check the current environment, run the following command:
+
+```sh
+conda info --envs
+```
+
+To export the dependencies of the environment, run the following command:
+
+```sh
+conda env export > environment.yml
+```
+
+To create the environment from a environment.yml file, run the following command:
+
+```sh
+conda env create -f environment.yml
+```
